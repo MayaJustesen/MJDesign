@@ -1,0 +1,382 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(128, 19,19);
+    background-color: white;
+  }
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+  }
+  h1 {
+    text-align: left;
+  }
+  h2 {
+    text-align: left;
+  }
+  h3 {
+    text-align: left;
+  }
+  /* Style the header */
+  header {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    color: white;
+  }
+  
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+    background-color: white;
+  }
+  .container2 {
+    width: 100%;
+    background-color: white;
+    padding-top: center;
+  }
+
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(128, 19,19);
+    padding-bottom: 30px;
+    padding-top: 30px;
+    height: 100px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Styling i Nav bar */
+  .navknap{
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      margin-left: 60px;
+      margin-right: 60px;
+ }
+ 
+  a:hover{
+    font-size: large;
+    font-weight: 700;
+  }
+
+  li{
+      font-size: 16px;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding-right: 40px;
+      padding-left: 40px;
+  }
+
+  .nav_links{
+      list-style: none;
+      padding: 0, 40, 0, 40
+  }
+  .nav_links li{
+      display: inline-block;
+  }
+  .nav_links li a:hover{
+    transition: all 0.3s ease 0;
+    color: black;
+  }
+  .logo {
+      width: 100px;
+  }
+  .logo img {
+  width: 150%;
+  position: center;
+ }
+  /* Style the content */
+  /*.container1 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+   
+  
+   .container2 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }*/
+  
+  /* Style the footer */
+  footer P{
+    background-color: rgb(128, 19,19);
+    padding: 10px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+  }
+
+main{
+  box-sizing: border-box;
+  background-color: white;
+  }
+  
+  /* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+.article-main {
+  background-color: white;
+}
+.article-right {
+  width: 50%;
+}
+.article-right img {
+  width: 512px;
+ 
+
+}
+.design-img {
+  justify-content: right;
+  place-items: right;
+}
+.article-left {
+  width: 50%;
+  text-align: left;
+}
+  h1 {
+    font-size: 50px;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+div.gallery {
+  margin: 5px;
+  border: 1px solid rgb(128, 19,19);
+  float: left;
+  width: 300px;
+  column-width: 3;
+  flex-wrap: wrap;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: rgb(128, 19, 19);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 9px;
+  border-color: rgb(128, 19,19);
+  background-color: white;
+  padding: 20px;
+  width: 50%;
+  margin-bottom: 50px;
+}
+.container-video {
+  background-color: rgb(255, 255, 255);
+}
+.container-img {
+ padding-left: 9%;
+ padding-top: 10%;
+ size: 100%;
+ border: none;
+ text-align: right;
+ background-color: white;
+ margin-bottom: 0%;
+  
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+div.gallery {
+  margin: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.desc a {
+  text-align: center;
+}
+
+section {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: none;
+  width: auto;
+  background-color: white;
+  text-align: right;
+}
+.gallery {
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  text-align: left;
+}
+
+.foto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  align-items: center;
+}
+
+.box{
+  padding: 1em;
+  text-align: center;
+  text-overflow: none;
+  padding-bottom: 0px;
+}
+
+.foto img{
+  width: 150px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-right: none;
+  align-items: flex-start;
+}
+
+li {
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 20px;
+  text-decoration: none;
+
+}
+
+li element.style {
+  padding-left: none;
+}
+
+.icon-img {
+  padding: 10px; 
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted rgb(128, 19, 19); /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(128, 19, 19);
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
